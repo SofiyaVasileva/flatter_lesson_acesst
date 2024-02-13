@@ -16,48 +16,69 @@ class FirstRoute extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Добро пожаловать!'),
+        backgroundColor: const Color.fromARGB(255, 194, 249, 255),
       ),
       body: Center(
-        child: Column(
-          children: [
-            Container( margin: const EdgeInsets.all(20),
+        child: Container( margin: const EdgeInsets.all(20),
+
               child: Column(
               children: [
-                 const Text ('Авторизация',
-                  style: TextStyle(
-                    fontSize: 28,
-                  )
-                 ),
-                 const TextField(decoration: InputDecoration(
-                   border: OutlineInputBorder(),
-                   hintText: "Введите логин",
-                   fillColor: Colors.black12,
-                    filled: true
-                )
-               ),
-               const TextField(decoration: InputDecoration(
-                   border: OutlineInputBorder(),
-                   hintText: "Введите пароль",
-                   fillColor: Colors.black12,
-                    filled: true
-                )
-               ),
-                ElevatedButton(
-                  child: const Text('Open route'),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const SecondRoute()),
-                    );
-                  },
+                 const Text('Для продолжения Вам необходимо пройти авторизацию.',
+                        style: TextStyle(
+                        fontSize: 28,
+                      )
+                      ),
+                Container(
+                  margin: const EdgeInsetsDirectional.only(bottom: 10),
+                  constraints: const BoxConstraints (maxWidth: 200),
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [ 
+                    Text('Телефон или e-mail',
+                       style: TextStyle(
+                        fontSize: 20,
+                      )
+                    ),
+                      TextField(
+                      decoration: InputDecoration(
+                       border: OutlineInputBorder(),
+                       hintText: "Введите логин",
+                       fillColor: Color.fromARGB(49, 66, 0, 131),
+                        filled: true
+                    )
+                   ),
+                   Text('Пароль',
+                       style: TextStyle(
+                       fontSize: 20,
+                      )
+                    ),
+                    TextField(decoration: InputDecoration(
+                       border: OutlineInputBorder(),
+                       hintText: "Введите пароль",
+                       fillColor: Color.fromARGB(31, 0, 117, 130),
+                        filled: true
+                    )
+                   )
+                  ]
+                  ),
                 ),
-              ],
+                ElevatedButton(
+                      child: const Text('Войти'), onPressed:(){}
+                    ),
+                 ElevatedButton(
+                      child: const Text('Регистрация'),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const SecondRoute()),
+                        );
+                      },
+                    ),
+                  ],
+                ),
               )
-            ),
-          ],
         ),
-      ),
-    );
+      );
   }
 }
 
