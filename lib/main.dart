@@ -65,7 +65,7 @@ class FirstRoute extends StatelessWidget {
                 ElevatedButton(
                       child: const Text('Войти'), onPressed:(){}
                     ),
-                 ElevatedButton(
+                 TextButton(
                       child: const Text('Регистрация'),
                       onPressed: () {
                         Navigator.push(
