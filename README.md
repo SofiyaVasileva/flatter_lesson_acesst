@@ -1,16 +1,6 @@
-# vasilueva_autorithation
+# Васильева Софья
 
-A new Flutter project.
+## Окна авторизации и регистрации
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Снимок экрана 2024-02-28 в 14 41 02](https://github.com/SofiyaVasileva/flatter_lesson_acesst/assets/91559612/8e2fbd87-f5cd-4181-8fda-059382fe6dc5)
+![Снимок экрана 2024-02-28 в 14 41 26](https://github.com/SofiyaVasileva/flatter_lesson_acesst/assets/91559612/172af387-2139-4291-9c22-0ae0554ee219)
